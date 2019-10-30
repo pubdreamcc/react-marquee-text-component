@@ -1,0 +1,24 @@
+.marquee-wrap{
+  overflow: hidden;
+}
+.marquee-wrap .marquee-content{
+  width: 100000px;
+}
+.marquee-wrap .marquee-text{
+  float: left;
+  animation-name: marquee-text-animation;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+.marquee-wrap .paused{
+  animation-play-state: paused;
+}
+
+@keyframes marquee-text-animation {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
