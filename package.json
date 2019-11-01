@@ -1,6 +1,6 @@
 {
   "name": "react-marquee-text-component",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "A react component about marquee text",
   "main": "lib/index.js",
   "scripts": {
