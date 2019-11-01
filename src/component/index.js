@@ -3,14 +3,14 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import './index.css';
-import { red } from '_ansi-colors@3.2.4@ansi-colors';
-
 class Marquee extends React.PureComponent {
   static propTypes = {
   	duration: PropTypes.number,  // 动画周期
   	repeat: PropTypes.number,  // 插槽数量
   	paused: PropTypes.bool,  // 暂停或运行动画
-  	text: PropTypes.string.isRequired  // 跑马灯文字
+		text: PropTypes.string.isRequired,  // 跑马灯文字
+		style: PropTypes.object, // 内联样式
+		className: PropTypes.string // 类名
   }
 
   static defaultProps = {
@@ -44,9 +44,10 @@ class Marquee extends React.PureComponent {
   }
 
   render () {
-  	const prefixCls = 'marquee';
+		const prefixCls = 'marquee';
+		const {className = '', style = {}} = this.props;
   	return (
-  		<div className={`${prefixCls}-wrap`}>
+  		<div className={className ? `${prefixCls}-wrap ${className}` : `${prefixCls}-wrap`} style={JSON.stringify(style) !== '{}' ? style : {}}>
   			<div className={`${prefixCls}-content`}>
   				{this.renderMarquee()}
   			</div>

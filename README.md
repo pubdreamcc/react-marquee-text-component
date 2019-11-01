@@ -33,6 +33,9 @@ class Demo extends React.Component {
 |duration|Number |15|Animation Duration     |
 |repeat	 |Number |2 |Number of repeat the Slot (It's important for to short content)            |
 |paused  |Boolean|false|The property specifies whether the animation is running or paused|
+|style|Object||Style of marquee text|
+|className|String||The class name of the marquee text|
+
 
 ## License
 
