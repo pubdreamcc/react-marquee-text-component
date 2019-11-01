@@ -1,7 +1,5 @@
 # react-marquee-text-component
 
----
-
 ![npm](https://img.shields.io/npm/v/react-marquee-text-component)   ![NPM](https://img.shields.io/npm/l/react-marquee-text-component) ![npm](https://img.shields.io/npm/dw/react-marquee-text-component) ![GitHub stars](https://img.shields.io/github/stars/pubdreamcc/react-marquee-text-component?label=star)
 
 基于react的跑马灯文字效果。
