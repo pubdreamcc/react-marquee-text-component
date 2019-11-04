@@ -10,6 +10,7 @@
 
 node_modules
 /node_modules
+/example/dist
 
 npm-debug.log
 npm-debug.log*

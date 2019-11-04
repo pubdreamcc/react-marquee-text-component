@@ -6,11 +6,16 @@
   "scripts": {
     "start": "webpack-dev-server --mode development",
     "build": "webpack --mode production",
-    "compile": "npx babel src --out-dir lib"
+    "compile": "npx babel src --out-dir lib",
+    "deploy": "gh-pages -d example/dist",
+    "publish-demo": "npm run build && npm run deploy"
   },
   "author": "pubdreamcc",
   "license": "MIT",
-  "keywords": ["react-marquee-component", "react-marquee-text-component"],
+  "keywords": [
+    "react-marquee-component",
+    "react-marquee-text-component"
+  ],
   "repository": {
     "type": "git",
     "url": "git@github.com:pubdreamcc/react-marquee-text-component.git"
@@ -21,8 +26,6 @@
     "react-dom": "^16.11.0"
   },
   "devDependencies": {
-    "webpack": "^4.41.2",
-    "webpack-cli": "^3.3.9",
     "@babel/cli": "^7.6.4",
     "@babel/core": "^7.6.4",
     "@babel/plugin-proposal-class-properties": "^7.5.5",
@@ -30,8 +33,11 @@
     "@babel/preset-react": "^7.6.3",
     "babel-loader": "^8.0.6",
     "css-loader": "^3.2.0",
+    "gh-pages": "^2.1.1",
     "html-webpack-plugin": "^3.2.0",
     "style-loader": "^1.0.0",
+    "webpack": "^4.41.2",
+    "webpack-cli": "^3.3.9",
     "webpack-dev-server": "^3.9.0",
     "webpack-merge": "^4.2.2"
   }

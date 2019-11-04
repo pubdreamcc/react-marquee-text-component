@@ -4,6 +4,10 @@
 
 基于react的跑马灯文字效果。
 
+## Demo
+
+[Demo here](https://pubdreamcc.github.io/react-marquee-text-component/)
+
 ## Installation
 
 ```shell
